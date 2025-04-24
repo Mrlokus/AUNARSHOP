@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div><img src="src/img/Logo.png" alt="AunarShop Logo" class="logo1"></div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="cart"><a href="#">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile-container">
+        <h1>Mi Perfil</h1>
+
+        <!-- Sección de Foto de Perfil -->
+        <div class="profile-photo-container">
+            <img id="profile-photo" src="src/img/user.png" alt="Foto de perfil" class="profile-photo">
+            <input type="file" id="photo-upload" accept="image/*">
+            <button class="upload-btn" onclick="document.getElementById('photo-upload').click();">Subir Foto</button>
+        </div>
+
+        <!-- Datos del Usuario -->
+        <div class="profile-box">
+            <div class="profile-info">
+                <p><strong>Nombres:</strong> <span id="nombre">Juan</span></p>
+                <p><strong>Apellidos:</strong> <span id="apellido">Pérez</span></p>
+                <p><strong>Correo:</strong> <span id="correo">juan.perez@example.com</span></p>
+                <p><strong>Dirección:</strong> <span id="direccion">Calle 123</span></p>
+                <p><strong>Teléfono:</strong> <span id="telefono">1234567890</span></p>
+                <p><strong>Departamento:</strong> <span id="departamento">Bogotá</span></p>
+                <p><strong>Ciudad:</strong> <span id="ciudad">Bogotá</span></p>
+                <p><strong>Código Postal:</strong> <span id="codigo-postal">110111</span></p>
+            </div>
+            <button class="edit-btn" onclick="window.location.href='edit.html'">Editar Información</button>
+        </div>
+    </div>
+
+    <script src="scripts/profile.js"></script>
+</body>
+</html>

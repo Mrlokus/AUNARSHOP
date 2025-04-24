@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta - Aunar Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div><img src="src/img/Logo.png" alt="AunarShop Logo" class="logo1"></div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="cart"><a href="#">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-wrapper">
+        <div class="account-container">
+            <h1>¡Bienvenido, Usuario!</h1>
+            <div class="account-summary">
+                <div class="account-card">
+                    <p class="icon">🛒</p>
+                    <h3>Mis Pedidos</h3>
+                    <p>3 pedidos activos</p>
+                    <button>Ver todos</button>
+                </div>
+                <div class="account-card">
+                    <p class="icon">⭐</p>
+                    <h3>Favoritos</h3>
+                    <p>5 productos guardados</p>
+                    <button>Ver lista</button>
+                </div>
+                <div class="account-card">
+                    <p class="icon">👤</p>
+                    <h3>Mi Perfil</h3>
+                    <p>Actualiza tus datos</p>
+                    <button onclick="window.location.href='profile.html'">Editar</button>
+                </div>
+            </div>
+
+            <section class="recent-orders">
+                <h2>Pedidos Recientes</h2>
+                <table>
+                    <tr>
+                        <th>#Orden</th>
+                        <th>Productos</th>
+                        <th>Total</th>
+                        <th>Estado</th>
+                    </tr>
+                    <tr>
+                        <td>#ORD-2023-001</td>
+                        <td>2 productos</td>
+                        <td>$45.000 COP</td>
+                        <td>En proceso</td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-2023-002</td>
+                        <td>1 producto</td>
+                        <td>$25.000 COP</td>
+                        <td>Enviado</td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-2023-003</td>
+                        <td>3 productos</td>
+                        <td>$65.000 COP</td>
+                        <td>Entregado</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="recommended-products">
+                <h2>Productos Recomendados</h2>
+                <div class="product-list">
+                    <div class="product-card">
+                        <h3>Camiseta Universitaria</h3>
+                        <p>$35.000 COP</p>
+                        <button>Comprar</button>
+                        <button>Ver</button>
+                    </div>
+                    <div class="product-card">
+                        <h3>Gorra Oficial</h3>
+                        <p>$25.000 COP</p>
+                        <button>Comprar</button>
+                        <button>Ver</button>
+                    </div>
+                    <div class="product-card">
+                        <h3>Libreta Premium</h3>
+                        <p>$15.000 COP</p>
+                        <button>Comprar</button>
+                        <button>Ver</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

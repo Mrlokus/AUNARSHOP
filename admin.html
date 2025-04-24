@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panel de Administración - Usuarios</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div><img src="src/img/Logo.png" alt="AunarShop Logo" class="logo1"></div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Emprendimientos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="cart"><a href="#">Carrito</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Gestión de Cuentas de Usuario</h1>
+
+        <div class="user-table-container">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Daniel Sanchez</td>
+                        <td>Daniele@gmail.com</td>
+                        <td>Administrador</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="cancel-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jordan Montero</td>
+                        <td>jordans@gmail.com</td>
+                        <td>Administrador</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="cancel-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ana Torres</td>
+                        <td>ana@example.com</td>
+                        <td>Cliente</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="cancel-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>juan@example.com</td>
+                        <td>Cliente</td>
+                        <td>
+                            <button class="edit-btn">Editar</button>
+                            <button class="cancel-btn">Eliminar</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal de edición -->
+    <div id="editModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Editar Usuario</h2>
+            <form id="editUserForm">
+                <label for="editName">Nombre:</label>
+                <input type="text" id="editName" name="editName" required>
+
+                <label for="editEmail">Correo:</label>
+                <input type="email" id="editEmail" name="editEmail" required>
+
+                <label for="editRole">Rol:</label>
+                <select id="editRole" name="editRole" required>
+                    <option value="Cliente">Cliente</option>
+                    <option value="Administrador">Administrador</option>
+                </select>
+
+                <button type="submit" class="save-btn">Guardar cambios</button>
+                <button type="button" class="cancel-btn" onclick="closeModal()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/admin.js"></script><!-- Enlace al archivo JS -->
+</body>
+</html>
