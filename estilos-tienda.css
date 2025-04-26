@@ -16,7 +16,7 @@
 ------------------------ */
 .navbar {
     width: 100%;
-    background-color: #fff; /* Blanco */
+    background-color: #FFD608; /* Blanco */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,6 +96,10 @@
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
+
+  .hero {
+    padding: 20px;
+  }	
   
   /* Tarjetas de producto */
   .card {
@@ -131,7 +135,7 @@
     color: #e76f51;
     margin-bottom: 1rem;
   }
-  .busqueda-container { display: flex; flex-direction: column; align-items: center; margin: 2rem auto; max-width: 600px; position: relative; }
+  .busqueda-container { display: flex; flex-direction: column; align-items: center; margin: auto; max-width: 600px; position: relative; }
 
   .busqueda-container input { width: 100%; padding: 0.8rem 1rem; font-size: 1rem; border: 2px solid #ccc; border-radius: 8px; }
   
@@ -142,3 +146,14 @@
   .sugerencias li:hover { background-color: #f0f0f0; }
   
   .hidden { display: none; }  
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative; /* Asegura que esté en su flujo normal */
+    z-index: 10;
+    margin-bottom: 20px; /* SEPARACIÓN */
+  }
+  
