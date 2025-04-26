@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda</title>
+  <link rel="stylesheet" href="estilos-tienda.css"/>
+</head>
+<body>
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div><img src="src/img/Logo.png" alt="AunarShop Logo" class="logo1"></div>
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Emprendimientos</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li class="cart"><a href="#">Carrito</a></li>
+    </ul>
+</nav>
+
+  <!-- Barra de búsqueda --> <section class="busqueda-container"> <input type="text" id="busqueda" placeholder="Buscar productos..." /> <ul id="sugerencias" class="sugerencias hidden"></ul> </section> </body>:
+
+<script src="busqueda.js"></script>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Descubre Nuestros Productos</h1>
+    <p>Explora lo mejor de cada categoría</p>
+  </section>
+
+  <!-- Contenido por categorías -->
+  <main class="categorias-container">
+
+    <!-- Ejemplo de categoría -->
+    <section class="categoria">
+      <h2>Electrónica</h2>
+      <div class="productos-grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180?text=Celular" alt="Celular">
+          <h3>Smartphone X</h3>
+          <p>$1.200.000</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180?text=Audífonos" alt="Audífonos">
+          <h3>Audífonos Pro</h3>
+          <p>$350.000</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>Hogar</h2>
+      <div class="productos-grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180?text=Cafetera" alt="Cafetera">
+          <h3>Cafetera Digital</h3>
+          <p>$280.000</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/300x180?text=Ventilador" alt="Ventilador">
+          <h3>Ventilador 3 Velocidades</h3>
+          <p>$140.000</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

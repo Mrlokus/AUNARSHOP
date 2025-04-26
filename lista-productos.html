@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="../styles.css" />
+
+</head>
+<body>
+  <nav class="navbar">
+    <div><img src="src/img/Logo.png" alt="AunarShop Logo" class="logo1"></div>
+    <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Emprendimientos</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li class="cart"><a href="#">Carrito</a></li>
+    </ul>
+</nav>
+
+  <div class="container">
+    <h1 class="page-title">Catálogo de Productos</h1>
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Categoría</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-id="1">
+          <td>Camiseta AUNAR</td>
+          <td>$25.000</td>
+          <td>10</td>
+          <td>Ropa</td>
+          <td>
+            <button class="edit-btn">Editar</button>
+            <button class="delete-btn">Eliminar</button>
+          </td>
+        </tr>
+        <tr data-id="2">
+          <td>Mochila Universitaria</td>
+          <td>$40.000</td>
+          <td>5</td>
+          <td>Accesorios</td>
+          <td>
+            <button class="edit-btn">Editar</button>
+            <button class="delete-btn">Eliminar</button>
+          </td>
+        </tr>
+        <tr data-id="3">
+          <td>Cuaderno A4</td>
+          <td>$8.000</td>
+          <td>30</td>
+          <td>Papelería</td>
+          <td>
+            <button class="edit-btn">Editar</button>
+            <button class="delete-btn">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Modal de confirmación -->
+  <div id="confirmModal" class="modal">
+    <div class="modal-content">
+      <h2>¿Eliminar producto?</h2>
+      <p>Esta acción no se puede deshacer.</p>
+      <div class="modal-buttons">
+        <button id="confirmDeleteBtn" class="delete-btn">Sí, eliminar</button>
+        <button onclick="closeModal()" class="cancel-btn">Cancelar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="productos.js"></script>
+</body>
+</html>
