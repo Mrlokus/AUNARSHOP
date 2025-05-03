@@ -1,0 +1,311 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ENCABEZADO */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #ffc800;
+}
+
+main {
+  padding-left: 200px;
+  padding-right: 200px;
+}	
+
+/* BREADCRUMB */
+.breadcrumb {
+  font-size: 14px;
+  color: #888;
+  margin: 20px 0;
+}
+
+/* DETALLE DEL PRODUCTO */
+.producto-detalle {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.imagen-producto {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  width: 380px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-producto img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: #4676f2;
+}
+
+.info-producto {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+}
+
+.stock {
+  color: green;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.info-producto h1 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.descripcion {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.acciones {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-carrito,
+.btn-guardar {
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-guardar {
+  background: #ddd;
+  color: #333;
+}
+
+/* COMPRA */
+.producto-compra h2 {
+  margin-bottom: 20px;
+}
+
+.opciones label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.tallas {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.talla {
+  border: 2px solid #2b60e1;
+  background: white;
+  color: #2b60e1;
+  padding: 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.talla.selected {
+  background: #ffd700;
+  border-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+}
+
+.colores {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.color.azul { background: #4676f2; }
+.color.negro { background: #000; }
+.color.blanco { background: #fff; border-color: #aaa; }
+.color.amarillo { background: #ffd700; }
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.cantidad button {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 2px solid #2b60e1;
+  color: #2b60e1;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cantidad input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.btn-comprar {
+  display: block;
+  width: 100%;
+  background: #ffd700;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-comprar:hover {
+  background: #f5c400;
+}
+
+/* TABLA DETALLES */
+.detalles-tabla {
+  margin-top: 50px;
+}
+
+.detalles-tabla h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.detalles-tabla table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.detalles-tabla td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+/* RELACIONADOS */
+.relacionados {
+  margin-top: 50px;
+}
+
+.productos-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #f6f6f6;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  flex: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #aaa;
+  font-size: 13px;
+}

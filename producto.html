@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalle del Producto - AUNAR SHOP</title>
+  <link rel="stylesheet" href="producto.css" />
+</head>
+<body>
+
+  <header class="top-nav">
+    <div class="logo">AUNAR SHOP</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Emprendimientos</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="product-page">
+
+    <!-- Migas de pan -->
+    <nav class="breadcrumb">
+      <a href="index.html">Inicio</a> >
+      <a href="producto.html">Productos</a> >
+      <span>Polo Facultad</span>
+    </nav>
+
+    <!-- Detalle del producto -->
+    <section class="producto-detalle">
+      <div class="imagen-producto">
+        <img src="src/img/Polo.png" alt="Camiseta">
+      </div>
+
+      <div class="info-producto">
+        <p class="stock">EN STOCK</p>
+        <h1>Polo Facultad</h1>
+        <p class="descripcion">
+          Polo oficial con el logo de la universidad. Material de alta calidad, 100% algodón.
+          Disponible en varios colores y tallas.
+        </p>
+        <div class="acciones">
+          <button class="btn-carrito" onclick="location.href='carrito.html'">Añadir al carrito</button>
+          <button class="btn-guardar">Guardar para después</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Precio y opciones -->
+    <section class="producto-compra">
+      <h2>Precio: $99.950 COP</h2>
+
+      <div class="opciones">
+        <label>Selecciona talla</label>
+        <div class="tallas">
+          <button class="talla">S</button>
+          <button class="talla selected">M</button>
+          <button class="talla">L</button>
+          <button class="talla">XL</button>
+        </div>
+
+        <label>Selecciona color</label>
+        <div class="colores">
+          <span class="color azul"></span>
+          <span class="color negro"></span>
+          <span class="color blanco"></span>
+          <span class="color amarillo"></span>
+        </div>
+
+        <label>Cantidad</label>
+        <div class="cantidad">
+          <button class="menos">-</button>
+          <input type="text" value="1" readonly />
+          <button class="mas">+</button>
+        </div>
+
+        <button class="btn-comprar" onclick="location.href='carrito.html'">Comprar ahora</button>
+      </div>
+    </section>
+
+    <!-- Tabla de detalles -->
+    <section class="detalles-tabla">
+      <h3>Detalles del producto</h3>
+      <table>
+        <tr>
+          <td>Material</td>
+          <td>100% Algodón</td>
+        </tr>
+        <tr>
+          <td>Disponibilidad</td>
+          <td>En stock</td>
+        </tr>
+        <tr>
+          <td>Envío</td>
+          <td>2-3 días hábiles</td>
+        </tr>
+        <tr>
+          <td>Garantía</td>
+          <td>30 días</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Productos relacionados -->
+    <section class="categoria">
+        <h2>Ropa</h2>
+        <div class="productos-grid">
+          <div class="card">
+            <img src="src/img/Chaqueta.png" alt="Chaqueta">
+            <h3>Chaqueta deportiva</h3>
+            <p>$200.000</p>
+          </div>
+          <div class="card">
+            <img src="src/img/Polo.png" alt="Camiseta">
+            <h3>Polo Facultad</h3>
+            <p>$350.000</p>
+          </div>
+          <div class="card">
+            <img src="src/img/gorra.png">
+            <h3>Gorra deportiva</h3>
+            <p>$350.000</p>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>© 2023 AUNAR SHOP. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="producto.js"></script>
+</body>
+</html>

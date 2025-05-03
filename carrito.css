@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #111;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .alerta {
+    display: flex;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .alerta .icono {
+    font-size: 1.5rem;
+    color: green;
+    margin-top: 5px;
+  }
+  
+  .botones-alerta {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-black,
+  .btn-gray,
+  .btn-amarelo {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .btn-eliminar {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  .celda-icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .btn-black {
+    background: #000;
+    color: #fff;
+  }
+  
+  .btn-gray {
+    background: #ddd;
+    color: #000;
+  }
+  
+  .btn-amarelo {
+    background: #ffd500;
+    color: #000;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .btn-eliminar {
+    background: transparent;
+    font-size: 1.2rem;
+  }
+  
+  .titulo {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .tabla-carrito th,
+  .tabla-carrito td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.95rem;
+  }
+  
+  .input-cantidad {
+    width: 60px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .precio {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .titulo-secundario {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .sugerencias {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 12px;
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .card h4 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .card .precio {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #888;
+    margin: 40px 0 20px;
+  }
+  

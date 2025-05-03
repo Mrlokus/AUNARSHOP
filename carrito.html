@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito - AunarShop</title>
+  <link rel="stylesheet" href="carrito.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">AUNAR SHOP</div>
+    <ul class="nav-links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Emprendimientos</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li class="cart"><a href="#">Carrito</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <section class="alerta">
+      <p class="icono">✔</p>
+      <div>
+        <strong>¡Producto añadido al carrito!</strong>
+        <p>Tu producto ha sido añadido exitosamente al carrito de compras.</p>
+        <div class="botones-alerta">          <button class="btn-gray" onclick="location.href='index.html'">Seguir comprando</button>
+        </div>
+      </div>
+    </section>
+
+    <h2 class="titulo">Resumen del carrito</h2>
+
+    <section class="resumen">
+      <table class="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camiseta Universitaria</td>
+            <td>$99.950 COP</td>
+            <td><input type="number" min="1" value="1" class="input-cantidad" /></td>
+            <td>$99.950 COP</td>
+            <td class="celda-icono"><button class="btn-eliminar">🗑️</button></td>          </tr>
+        </tbody>
+      </table>
+
+      <div class="precio">
+        <p>Envío:</p><p>$12.000 COP</p>
+        <p><strong>Total:</strong></p><p><strong>$111.950 COP</strong></p>
+      </div>
+
+      <button class="btn-amarelo">Proceder al pago</button>
+    </section>
+
+    <h3 class="titulo-secundario">También te puede interesar</h3>
+    <section class="sugerencias">
+      <div class="card">
+        <p class="icono">🛍️</p>
+        <h4>Gorra Oficial</h4>
+        <p class="precio">$74.000 COP</p>
+        <button class="btn-black">Añadir al carrito</button>
+      </div>
+      <div class="card">
+        <p class="icono">🛍️</p>
+        <h4>Botella Térmica</h4>
+        <p class="precio">$62.000 COP</p>
+        <button class="btn-black">Añadir al carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2023 AUNAR SHOP. Todos los derechos reservados.
+  </footer>
+</body>
+</html>

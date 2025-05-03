@@ -118,10 +118,14 @@
   
   .card img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+    height: 200px; /* o la altura que prefieras */
+    object-fit: contain; /* <-- cambia cover por contain */
+    background-color: #f9f9f9; /* opcional: color de fondo suave */
+    padding: 10px; /* opcional: separación interna si quieres */
+    border-radius: 8px 8px 0 0;
   }
+  
+  
   
   .card h3 {
     font-size: 1.2rem;
@@ -133,7 +137,6 @@
     font-weight: bold;
     font-size: 1rem;
     color: #e76f51;
-    margin-bottom: 1rem;
   }
   .busqueda-container { display: flex; flex-direction: column; align-items: center; margin: auto; max-width: 600px; position: relative; }
 
@@ -157,3 +160,13 @@
     margin-bottom: 20px; /* SEPARACIÓN */
   }
   
+  .btn-black {
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+  }
